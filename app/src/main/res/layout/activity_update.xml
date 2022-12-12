@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9C4"
+    android:padding="8dp"
+    tools:context=".UpdateActivity">
+
+    <EditText
+        android:id="@+id/edit_title_up"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_anchor_up"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Anchor"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edit_title_up"
+        app:layout_constraintStart_toStartOf="@+id/edit_title_up"
+        app:layout_constraintTop_toBottomOf="@+id/edit_title_up" />
+
+    <EditText
+        android:id="@+id/edit_pages_up"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Pages"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edit_anchor_up"
+        app:layout_constraintStart_toStartOf="@+id/edit_anchor_up"
+        app:layout_constraintTop_toBottomOf="@+id/edit_anchor_up" />
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:text="update"
+        android:textSize="72sp"
+        app:layout_constraintBottom_toTopOf="@+id/del_btn"
+        app:layout_constraintEnd_toEndOf="@+id/edit_pages_up"
+        app:layout_constraintStart_toStartOf="@+id/edit_pages_up"
+        app:layout_constraintTop_toBottomOf="@+id/edit_pages_up" />
+
+    <Button
+        android:id="@+id/del_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textColor="#CA4343"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
